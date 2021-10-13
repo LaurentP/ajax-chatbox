@@ -1,5 +1,7 @@
 <?php
 
+if (!file_exists('../database/')) mkdir('../database/');
+
 $dbh = new PDO('sqlite:../database/chatbox.db');
 $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
